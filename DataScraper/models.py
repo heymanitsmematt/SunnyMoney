@@ -2,17 +2,17 @@ from django.db import models
 
 class WeatherDay(models.Model):
     day = models.DateField()
-    hail = models.BooleanField()
-    snow = models.BooleanField()
-    fog = models.BooleanField()
-    rain = models.BooleanField()
-    minTemp = models.IntegerField() #mintempi
-    maxTemp = models.IntegerField() #maxtempi
-    meanTemp = models.IntegerField() #meantempi
-    minHumidity = models.IntegerField()
-    maxHumidity = models.IntegerField()
-    precipitation = models.IntegerField() #precipi
-    snowfall = models.IntegerField() #snowfalli
+    hail = models.BooleanField(null=True)
+    snow = models.BooleanField(null=True)
+    fog = models.BooleanField(null=True)
+    rain = models.BooleanField(null=True)
+    minTemp = models.IntegerField(null=True) #mintempi
+    maxTemp = models.IntegerField(null=True) #maxtempi
+    meanTemp = models.IntegerField(null=True) #meantempi
+    minHumidity = models.IntegerField(null=True)
+    maxHumidity = models.IntegerField(null=True)
+    precipitation = models.IntegerField(null=True) #precipi
+    snowfall = models.IntegerField(null=True) #snowfalli
 
     
 class Company(models.Model):
