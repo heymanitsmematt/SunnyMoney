@@ -1,4 +1,4 @@
-# SunnyMoney
+# SunnyMoney (note this project is in development and is not ready for the public yet...)
 The sun and rain effect the stock market in ways that show how beautiful data is. 
 
 This is a project to explore scikit-learn and build datasets through API.
